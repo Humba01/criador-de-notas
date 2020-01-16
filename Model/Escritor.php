@@ -2,7 +2,7 @@
 
 namespace Modelo\Model;
 
-use Modelo\Service\Mostra;
+use Modelo\Model\Mostra;
 
 class Escritor extends Mostra
 {
@@ -17,7 +17,7 @@ class Escritor extends Mostra
     public function criaArquivo(string $arquivo)
     {
         if (file_exists($arquivo)) {
-            return exit();
+            return;
         }
 
         return;
